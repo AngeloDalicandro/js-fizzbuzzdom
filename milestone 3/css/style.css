@@ -25,22 +25,24 @@ h1 {
     flex-wrap: wrap;
 }
 
-.box {
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    margin: 0.5rem;
+ul {
+    list-style-type: none;
 }
 
-.standard-box {
+.box {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    margin: 1rem;
     background-color: #1389b2;
+
 }
 
 .fizz {
-    background-color: ##0bd6a1;
+    background-color: #0bd6a1;
 }
 
 .buzz {
-    background-color: ##ffd166;
+    background-color: #ffd166;
 }
