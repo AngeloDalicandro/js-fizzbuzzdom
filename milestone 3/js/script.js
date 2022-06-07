@@ -8,18 +8,21 @@ for( i = 1; i <= 100; i++) {
     listItem.classList.add("box");
 
     // Seleziono i multipli di 5 e 3 e stampo nelle li
-    if( (i % 5) === 0) {
+    if( (i % 5) === 0 && (i % 3) === 0) {
+        fizzBuzzDom = 'fizzbuzz';
+        listItem.classList.add('fizzbuzz')
+    } else if( (i % 5) === 0) {
         fizzBuzzDom = 'buzz';
-        listItem.classList.add('buzz')
+        listItem.classList.add('buzz');
     } else if( (i % 3) === 0) {
         fizzBuzzDom = 'fizz';
-        listItem.classList.add('fizz')
+        listItem.classList.add('fizz');
     } else {
         fizzBuzzDom = i;
     }
 
-    listItem.append( ` ${fizzBuzzDom}  ` )
+    listItem.append( ` ${fizzBuzzDom}  ` );
 
-    console.log( listItem )
-    list.append( listItem )
+    console.log( listItem );
+    list.append( listItem );
     }
