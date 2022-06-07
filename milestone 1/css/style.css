@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #083b4c;
+}
+
+h1 {
+    margin: 3rem auto;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.standard-box {
+    background-color: #1389b2;
+}
+
+.fizz {
+    background-color: ##0bd6a1;
+}
+
+.buzz {
+    background-color: ##ffd166;
+}
