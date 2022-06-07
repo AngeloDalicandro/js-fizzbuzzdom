@@ -2,15 +2,19 @@
 let fizzBuzzDom;
 
 for( i = 1; i <= 100; i++) {
-// Seleziono i multipli di 5 e 3 e stampo in console
+    // Creo le li in js
+    let list = document.querySelector('ul');
+
+    // Seleziono i multipli di 5 e 3 e stampo nelle li
     if( (i % 5) === 0) {
         fizzBuzzDom = 'buzz';
-        console.log( fizzBuzzDom );
     } else if( (i % 3) === 0) {
         fizzBuzzDom = 'fizz';
-        console.log( fizzBuzzDom );
     } else {
         fizzBuzzDom = i;
-        console.log( fizzBuzzDom );
     }
+
+    const listItem = `<li> ${fizzBuzzDom} </li> `
+    list.innerHTML += listItem;
+
     }
